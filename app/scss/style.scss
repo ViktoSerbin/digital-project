@@ -1,0 +1,21 @@
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    background-color: rosybrown;
+}
+.box{
+    display: flex;
+    transition: all .3s;
+}
+.test{
+    text-align: center;
+    text-decoration: none;
+}
+.inner{
+    padding: 15px;
+    flex-wrap: wrap;
+}
