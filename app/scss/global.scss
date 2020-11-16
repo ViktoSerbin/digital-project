@@ -37,6 +37,7 @@ h5,
 h6 {
     margin: 0;
     font-size: inherit;
+    font-weight: inherit;
 }
 
 p {
@@ -44,7 +45,7 @@ p {
 }
 
 body {
-    font-family: 'TTHoves';
+    font-family: "TTHoves";
     font-size: 14px;
 }
 
@@ -59,3 +60,9 @@ form {
     padding: 0 15px;
 }
 
+.title {
+    font-family: "TTHoves-Light";
+    font-size: 64px;
+    line-height: 64px;
+    color: #bdbdbd;
+}
