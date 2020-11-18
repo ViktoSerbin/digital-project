@@ -682,3 +682,134 @@
 }
 
 // end footer
+
+// start gallery
+
+.gallery {
+	padding: 60px 0 120px 0;
+}
+
+.gallery__title {
+	font-family: "TTHoves-Bold";
+	font-size: 64px;
+	line-height: 64px;
+	color: #333;
+	padding-top: 64px;
+	position: relative;
+	margin-bottom: 30px;
+	span {
+		font-family: "TTHoves-Light";
+		color: #bdbdbd;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+
+.gallery__items {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-left: -30px;
+	padding-top: 30px;
+	margin-bottom: 30px;
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		max-width: 1170px;
+		width: 100%;
+		height: 1px;
+		background-color: #F2F2F2;
+	}
+	.gallery__item {
+		flex-basis: calc(20% - 30px);
+		max-width: 210px;
+		margin: 0 0 30px 30px;
+		position: relative;
+		&-img {
+			display: block;
+			width: 210px;
+			max-height: 260px;
+			height: 100%;
+			object-fit: cover;
+		}
+		&-info {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			background-color: #fbfbfb;
+			padding: 0;
+			height: 0;
+			overflow: hidden;
+		}
+		&-text {
+			font-size: 14px;
+			line-height: 18px;
+			color: #333;
+		}
+		&:hover {
+			a {
+				height: 100%;
+			}
+			.gallery__item-img {
+				height: 50%;
+				transition: all 0.5s ease-in-out;
+			}
+			.gallery__item-info {
+				height: 50%;
+				padding: 20px;
+				transition: all 0.5s ease-in-out;
+			}
+		}
+	}
+}
+
+.pagination {
+	display: flex;
+	.number__page-box {
+		display: flex;
+		align-items: center;
+		font-size: 24px;
+		line-height: 24px;
+		span {
+			color: #333;
+		}
+		a {
+			color: #bdbdbd;
+			transition: all 0.3s;
+			&:hover {
+				color: #333;
+			}
+		}
+	}
+	.pagination__line {
+		width: 40px;
+		height: 2px;
+		background-color: #e0e0e0;
+		transform: matrix(-0.71, 0.71, -0.71, -0.71, 0, 0);
+		margin: 0 25px 0 25px;
+	}
+	.page__btn-box {
+		display: flex;
+		align-items: center;
+		.page__btn {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 50px;
+			height: 50px;
+			border: 1px solid #f2f2f2;
+			background-color: #fff;
+			margin-left: 25px;
+			transition: all 0.3s;
+			&:hover {
+				background-color: #f9f9f9;
+			}
+		}
+	}
+}
+
+// end gallery
