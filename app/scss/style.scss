@@ -722,13 +722,16 @@
 		max-width: 1170px;
 		width: 100%;
 		height: 1px;
-		background-color: #F2F2F2;
+		background-color: #f2f2f2;
 	}
 	.gallery__item {
 		flex-basis: calc(20% - 30px);
 		max-width: 210px;
 		margin: 0 0 30px 30px;
 		position: relative;
+		a {
+			height: 100%;
+		}
 		&-img {
 			display: block;
 			width: 210px;
@@ -751,9 +754,6 @@
 			color: #333;
 		}
 		&:hover {
-			a {
-				height: 100%;
-			}
 			.gallery__item-img {
 				height: 50%;
 				transition: all 0.5s ease-in-out;
@@ -813,3 +813,132 @@
 }
 
 // end gallery
+
+// start projects
+
+.projects {
+	padding: 60px 0 120px 0;
+}
+
+.projects__title {
+	font-family: "TTHoves-Bold";
+	font-size: 64px;
+	line-height: 64px;
+	color: #333;
+	padding-top: 64px;
+	position: relative;
+	margin-bottom: 60px;
+	span {
+		font-family: "TTHoves-Light";
+		color: #bdbdbd;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+
+.projects__item {
+	display: flex;
+	margin-bottom: 60px;
+	background-color: #fbfbfb;
+	&-img {
+		display: block;
+		max-width: 670px;
+		width: 100%;
+		max-height: 435px;
+		object-fit: cover;
+	}
+	&-content {
+		padding: 30px;
+	}
+	&-title {
+		font-family: "TTHoves-Light";
+		font-size: 40px;
+		line-height: 50px;
+		color: #bdbdbd;
+		margin-bottom: 20px;
+	}
+	&-text {
+		font-family: "TTHoves-Light";
+		font-size: 16px;
+		line-height: 25px;
+		color: #000;
+		margin-bottom: 64px;
+	}
+	&-link {
+		padding: 29px 90px 29px 50px;
+		background-color: #fff;
+		font-size: 12px;
+		line-height: 12px;
+		letter-spacing: 0.2em;
+		text-transform: uppercase;
+		color: #333;
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			right: 50px;
+			width: 18px;
+			height: 8px;
+			background-image: url("../images/ico-shape-right.svg");
+			transition: all 0.7s ease-in-out;
+		}
+		&:hover {
+			&::after {
+				transform: rotate(360deg);
+			}
+		}
+	}
+}
+
+// end projects
+
+// start project-one
+
+.project-one {
+	padding: 60px 0 120px 0;
+}
+
+.project-one__title {
+	font-family: "TTHoves-Bold";
+	font-size: 64px;
+	line-height: 64px;
+	color: #333;
+	padding-top: 64px;
+	position: relative;
+	margin-bottom: 60px;
+	span {
+		font-family: "TTHoves-Light";
+		color: #bdbdbd;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+
+.project-one__big--img {
+	display: block;
+	max-width: 1170px;
+	width: 100%;
+	max-height: 435px;
+	object-fit: cover;
+}
+
+.project-one__info {
+	display: flex;
+	margin: 30px 0 30px 0;
+	&--img {
+		max-width: 420px;
+		width: 100%;
+		max-height: 430px;
+	}
+	&--text {
+		font-family: "TTHoves-Light";
+		margin-left: 30px;
+		font-size: 16px;
+		line-height: 25px;
+		color: #000;
+	}
+}
+
+// end project-one
