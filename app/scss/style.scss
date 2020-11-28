@@ -38,6 +38,11 @@
 	height: 100px;
 }
 
+.header__top-logo:hover {
+	animation-duration: 1.5s;
+	animation-name: jello;
+}
+
 .menu {
 	margin-right: 130px;
 	.menu__item {
@@ -84,6 +89,10 @@
 			}
 		}
 	}
+}
+
+.header-menu__btn {
+	display: none;
 }
 
 .header__bottom {
@@ -190,6 +199,8 @@
 				&::after {
 					content: "";
 					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
 					right: 0;
 					width: 18px;
 					height: 8px;
@@ -198,7 +209,9 @@
 				}
 				&:hover {
 					&::after {
-						transform: rotate(360deg);
+						animation-duration: 2.5s;
+						animation-iteration-count:infinite;
+						animation-name: shakeX;
 					}
 				}
 			}
@@ -257,6 +270,7 @@
 		color: #333;
 		background-color: #fff;
 		padding: 30px 100px 30px 65px;
+		margin-bottom: 15px;
 		position: relative;
 		&::after {
 			content: "";
@@ -269,7 +283,9 @@
 		}
 		&:hover {
 			&::after {
-				transform: rotate(360deg);
+				animation-duration: 2.5s;
+				animation-iteration-count:infinite;
+				animation-name: shakeX;
 			}
 		}
 	}
@@ -448,7 +464,9 @@
 	}
 	&:hover {
 		&::after {
-			transform: rotate(360deg);
+			animation-duration: 2.5s;
+			animation-iteration-count:infinite;
+			animation-name: shakeX;
 		}
 	}
 }
@@ -467,6 +485,7 @@
 
 .contactus__inner {
 	display: flex;
+	justify-content: space-between;
 }
 
 .contactus__form {
@@ -565,7 +584,9 @@
 		}
 		&:hover {
 			&::after {
-				transform: rotate(360deg);
+				animation-duration: 2.5s;
+				animation-iteration-count:infinite;
+				animation-name: shakeX;
 			}
 		}
 	}
@@ -591,7 +612,13 @@
 .footer__inner {
 	display: flex;
 	justify-content: space-between;
-	padding: 60px 0 60px 0;
+	flex-wrap: wrap;
+	padding: 30px 0 60px 0;
+}
+
+.footer__logo:hover {
+	animation-duration: 1.5s;
+	animation-name: jello;
 }
 
 .footer__item {
@@ -600,6 +627,11 @@
 	font-size: 14px;
 	line-height: 24px;
 	letter-spacing: 0.03em;
+	margin-top: 30px;
+}
+
+.footer__item + .footer__item {
+	margin-left: 30px;
 }
 
 .footer__title {
@@ -616,6 +648,8 @@
 	&-item:hover {
 		transition: all 0.3s;
 		color: #8d8d8d;
+		animation-duration: 1s;
+		animation-name: rubberBand;
 	}
 }
 
@@ -1152,3 +1186,6 @@
 }
 
 // end contact-page
+
+
+@import "media";

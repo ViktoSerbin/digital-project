@@ -12,8 +12,6 @@ html {
 html,
 body {
     height: 100%;
-    position: relative;
-    overflow-x: hidden;
 }
 
 a {
@@ -47,6 +45,9 @@ p {
 body {
     font-family: "TTHoves";
     font-size: 14px;
+    position: relative;
+    overflow-x: hidden;
+    min-width: 320px;
 }
 
 form {
