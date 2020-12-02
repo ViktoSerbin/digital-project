@@ -762,6 +762,7 @@
 	.gallery__item {
 		flex-basis: calc(20% - 30px);
 		max-width: 210px;
+		height: 100%;
 		margin: 0 0 30px 30px;
 		position: relative;
 		a {
