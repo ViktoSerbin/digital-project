@@ -1007,6 +1007,7 @@
 .certificates__inner {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	margin-bottom: 60px;
 	.certificates__img {
 		display: block;
